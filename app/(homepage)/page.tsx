@@ -28,7 +28,7 @@ export default function Homepage() {
             <div className="relative flex w-full pb-28 sm:pb-0">
               {/* Col */}
               <div className="z-[1] w-full text-white md:w-3/5 md:py-16">
-                <span className="text-4xl font-bold leading-tight md:text-6xl">
+                <span className="text-3xl font-bold leading-tight md:text-6xl">
                   #ThinkBig#GrowBigger
                 </span>
                 <h1 className="mt-4 text-lg font-semibold md:text-xl">

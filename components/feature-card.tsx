@@ -71,7 +71,7 @@ export const PeimaryFeatureCard = () => {
       {items.map((item) => (
         <div
           key={item.id}
-          className="overflow-hidden rounded-3xl border border-slate-100 p-2 transition duration-300 ease-linear hover:bg-slate-50"
+          className="overflow-hidden rounded-3xl border border-slate-100 p-2 transition duration-300 ease-linear hover:bg-slate-100"
         >
           {/* # */}
           <div className="my-gradient-1 rounded-2xl p-3 text-center">
@@ -131,7 +131,7 @@ export const SecondaryFeatureCard = () => {
       {items.map((item) => (
         <div
           key={item.id}
-          className="flex items-center justify-start rounded-3xl p-4 transition duration-300 ease-linear hover:bg-slate-50 md:flex-col md:items-center md:p-6"
+          className="flex items-center justify-start rounded-3xl p-4 transition duration-300 ease-linear hover:bg-slate-100 md:flex-col md:items-center md:p-6"
         >
           {/* # */}
           <Image

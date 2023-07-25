@@ -12,6 +12,7 @@ import DomainSearch from "@/components/domain-search";
 import {
   PeimaryFeatureCard,
   SecondaryFeatureCard,
+  ServiceProviderCard,
 } from "@/components/feature-card";
 
 export default function Homepage() {
@@ -92,6 +93,27 @@ export default function Homepage() {
         </div>
       </section>
       {/* ./ Features */}
+
+      {/* Credits */}
+      <section className="my-gradient-2 px-4 py-16">
+        <div className="container">
+          <div className="flex flex-col items-center gap-8">
+            {/* # */}
+            <div className="flex flex-col items-center text-center">
+              <h2 className="h2 font-bold text-white md:w-2/3">
+                155.000+ Pelanggan memilih Rumahweb karena ...
+              </h2>
+              <span className="mt-4 h-1 w-20 bg-destructive"></span>
+            </div>
+
+            {/* # */}
+            <div className="flex w-full flex-wrap justify-center">
+              <ServiceProviderCard />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ./ Credits */}
     </>
   );
 }

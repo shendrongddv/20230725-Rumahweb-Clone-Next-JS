@@ -63,6 +63,39 @@ const secondaryFeatures = [
   },
 ];
 
+const serviceProviders = [
+  {
+    id: 1,
+    title: "ICANN Accredited Registrar",
+    href: "/",
+    img: "icann.webp",
+  },
+  {
+    id: 2,
+    title: "Google Cloud Partner",
+    href: "/",
+    img: "google-cloud.webp",
+  },
+  {
+    id: 3,
+    title: "cPanel NOC Partner",
+    href: "/",
+    img: "cpanel.webp",
+  },
+  {
+    id: 4,
+    title: "Alibaba Cloud Partner",
+    href: "/",
+    img: "alibaba-cloud.webp",
+  },
+  {
+    id: 5,
+    title: "Litespeed Hosting Partner",
+    href: "/",
+    img: "litespeed.webp",
+  },
+];
+
 export const PeimaryFeatureCard = () => {
   const items = primaryFeatures;
 
@@ -147,6 +180,36 @@ export const SecondaryFeatureCard = () => {
             <h3 className="h4 font-bold">{item.title}</h3>
             <p className="mt-2">{item.desc}</p>
           </div>
+        </div>
+      ))}
+    </>
+  );
+};
+
+// Service Providers
+export const ServiceProviderCard = () => {
+  const items = serviceProviders;
+
+  return (
+    <>
+      {items.map((item) => (
+        <div
+          key={item.id}
+          className="flex w-1/3 flex-col items-center gap-4 p-3 text-center sm:w-1/2 sm:p-4 md:w-1/5"
+        >
+          {/* # */}
+          <Image
+            src={`/${item.img}`}
+            alt={item.title}
+            width={134}
+            height={134}
+            className="h-16 w-auto sm:h-20"
+          />
+
+          {/* # */}
+          <h3 className="h4 text-xs font-bold text-white sm:w-4/5 sm:text-base">
+            {item.title}
+          </h3>
         </div>
       ))}
     </>

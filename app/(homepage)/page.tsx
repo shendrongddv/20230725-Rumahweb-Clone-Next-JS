@@ -79,14 +79,14 @@ export default function Homepage() {
 
       {/* Features */}
       <section className="px-4 py-16">
-        <div className="container flex flex-col gap-8">
+        <div className="container flex flex-col gap-12">
           {/* Primary Features */}
-          <div className="grid w-full gap-6 md:grid-cols-3">
+          <div className="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3">
             <PeimaryFeatureCard />
           </div>
 
           {/* Secondary Features */}
-          <div className="grid w-full gap-6 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid w-full sm:grid-cols-2 md:grid-cols-4">
             <SecondaryFeatureCard />
           </div>
         </div>

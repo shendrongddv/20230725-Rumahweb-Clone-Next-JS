@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 // Content
 const primaryFeatures = [
@@ -31,6 +32,37 @@ const primaryFeatures = [
   },
 ];
 
+const secondaryFeatures = [
+  {
+    id: 1,
+    title: "Jasa Pembuatan Website",
+    desc: "Jasa pembuatan website instan, hanya dalam 2 x 24 jam.",
+    href: "/",
+    img: "website.svg",
+  },
+  {
+    id: 2,
+    title: "VPS Murah",
+    desc: "VPS dengan SSD/NVME untuk performa terbaik.",
+    href: "/",
+    img: "vps.svg",
+  },
+  {
+    id: 3,
+    title: "Email Bisnis",
+    desc: "Email bisnis kapasitas besar yg dilengkapi tools kolaborasi.",
+    href: "/",
+    img: "email.svg",
+  },
+  {
+    id: 4,
+    title: "Dedicated Server",
+    desc: "Layanan sewa server branded dengan spesifikasi terbaik.",
+    href: "/",
+    img: "server.svg",
+  },
+];
+
 export const PeimaryFeatureCard = () => {
   const items = primaryFeatures;
 
@@ -39,22 +71,22 @@ export const PeimaryFeatureCard = () => {
       {items.map((item) => (
         <div
           key={item.id}
-          className="overflow-hidden rounded-xl border border-lime-500"
+          className="overflow-hidden rounded-3xl border border-slate-100 p-2 transition duration-300 ease-linear hover:bg-slate-50"
         >
           {/* # */}
-          <div className="my-gradient-1 p-4 text-center">
+          <div className="my-gradient-1 rounded-2xl p-3 text-center">
             <h3 className="h3 font-bold text-white">{item.title}</h3>
           </div>
 
           {/* # */}
-          <div className="flex flex-col items-center bg-white px-4 py-8 text-center">
+          <div className="mt-4 flex flex-col items-center p-2 text-center">
             {/* ## */}
             <Image
               src={`/${item.img}`}
               alt={item.title}
               width={400}
               height={300}
-              className="h-40 w-auto"
+              className="h-32 w-auto md:h-40"
             />
 
             {/* ## */}
@@ -74,14 +106,15 @@ export const PeimaryFeatureCard = () => {
               aria-label={item.title}
               className={cn(
                 buttonVariants({
-                  variant: "default",
+                  variant: "destructive",
                   size: "lg",
                   className:
-                    "mt-8 rounded-full bg-lime-500 text-base font-semibold",
+                    "mt-8 rounded-full text-base font-semibold text-white",
                 }),
               )}
             >
               Detail Info
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -91,12 +124,31 @@ export const PeimaryFeatureCard = () => {
 };
 
 export const SecondaryFeatureCard = () => {
+  const items = secondaryFeatures;
+
   return (
-    <div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis unde
-        iure.
-      </div>
-    </div>
+    <>
+      {items.map((item) => (
+        <div
+          key={item.id}
+          className="flex items-center justify-start rounded-3xl p-4 transition duration-300 ease-linear hover:bg-slate-50 md:flex-col md:items-center md:p-6"
+        >
+          {/* # */}
+          <Image
+            src={`/${item.img}`}
+            alt={item.title}
+            width={100}
+            height={100}
+            className="h-16 w-auto flex-none"
+          />
+
+          {/* # */}
+          <div className="flex flex-col items-start max-md:ml-4 md:mt-4 md:items-center md:text-center">
+            <h3 className="h4 font-bold">{item.title}</h3>
+            <p className="mt-2">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };

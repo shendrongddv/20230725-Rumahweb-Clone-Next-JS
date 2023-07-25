@@ -15,6 +15,8 @@ import {
   SecondaryFeatureCard,
   ServiceProviderCard,
 } from "@/components/feature-card";
+import ForYou from "@/components/for-you";
+import FAQAccordion from "@/components/faq-accordion";
 
 export default function Homepage() {
   return (
@@ -129,7 +131,9 @@ export default function Homepage() {
             </div>
 
             {/* # Content */}
-            <div></div>
+            <div className="w-full">
+              <ForYou />
+            </div>
           </div>
         </div>
       </section>
@@ -150,7 +154,9 @@ export default function Homepage() {
             </div>
 
             {/* # Content */}
-            <div></div>
+            <div className="md:w-3/5">
+              <FAQAccordion />
+            </div>
           </div>
         </div>
       </section>

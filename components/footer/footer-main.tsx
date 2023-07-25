@@ -6,7 +6,7 @@ import FooterMenu from "./footer-menu";
 
 const FooterMain = () => {
   return (
-    <footer className="bg-[#26274F] bg-primary-foreground bg-[url(/bg-footer.svg)] bg-left-bottom bg-no-repeat px-4 pt-16">
+    <footer className="bg-[#26274F] bg-primary-foreground bg-[url(/bg-footer.svg)] bg-left-bottom bg-no-repeat px-6 pt-16">
       <div className="container flex flex-col gap-16">
         {/* # */}
         <div className="flex flex-col gap-12 md:flex-row md:justify-evenly">

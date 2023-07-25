@@ -1,3 +1,7 @@
+// Components
+import HeaderMain from "@/components/header/header-main";
+import FooterMain from "@/components/footer/footer-main";
+
 interface HomepageLayoutProps {
   children: React.ReactNode;
 }
@@ -5,5 +9,11 @@ interface HomepageLayoutProps {
 export default async function HomepageLayout({
   children,
 }: HomepageLayoutProps) {
-  return <>{children}</>;
+  return (
+    <>
+      <HeaderMain />
+      <main className="flex flex-col">{children}</main>
+      <FooterMain />
+    </>
+  );
 }

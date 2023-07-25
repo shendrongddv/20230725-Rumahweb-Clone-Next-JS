@@ -101,3 +101,7 @@ h6 {
 .h4 {
   @apply leading-snug;
 }
+
+.my-gradient-1 {
+  background: linear-gradient(90deg, #7ddb24 0%, #78d71e 100%);
+}

@@ -1,17 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Montserrat as FontDisplay, Hind as FontBody } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
-const fontDisplay = FontDisplay({
+const fontDisplay = Open_Sans({
   subsets: ["latin"],
   variable: "--font-display",
 });
 
-const fontBody = FontBody({
+const fontBody = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  // weight: ["300", "400", "500", "600", "700"],
   variable: "--font-body",
 });
 

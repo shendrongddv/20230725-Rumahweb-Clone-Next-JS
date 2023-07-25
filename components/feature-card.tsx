@@ -96,6 +96,27 @@ const serviceProviders = [
   },
 ];
 
+const customerSupports = [
+  {
+    id: 1,
+    title: "Siaga 24 x 7",
+    desc: "Jangan ragu untuk menghubungi kami melalui livechat, telepon, dan email kapanpun Anda butuh bantuan.",
+    img: "siaga.svg",
+  },
+  {
+    id: 2,
+    title: "Tutorial Lengkap",
+    desc: "Tersedia tutorial yang sangat lengkap dalam bentuk artikel dan video untuk memandu Anda dalam menggunakan web hosting.",
+    img: "tutorial.svg",
+  },
+  {
+    id: 3,
+    title: "Garansi Uptime",
+    desc: "Garansi uptime 99% didukung multi backbone internet dilengkapi anti DDOS, server yang handal, dan dynamic firewall.",
+    img: "uptime.svg",
+  },
+];
+
 export const PeimaryFeatureCard = () => {
   const items = primaryFeatures;
 
@@ -210,6 +231,42 @@ export const ServiceProviderCard = () => {
           <h3 className="h4 text-xs font-bold text-white sm:w-4/5 sm:text-base">
             {item.title}
           </h3>
+        </div>
+      ))}
+    </>
+  );
+};
+
+// Customer Supports
+export const CustomerSupportCard = () => {
+  const items = customerSupports;
+
+  return (
+    <>
+      {items.map((item) => (
+        <div
+          key={item.id}
+          className="flex flex-col md:items-center md:text-center"
+        >
+          {/* # */}
+          <div className="flex items-center md:flex-col">
+            {/* ## */}
+            <Image
+              src={`/${item.img}`}
+              alt={item.title}
+              width={64}
+              height={64}
+              className="h-10 w-10 md:h-16 md:w-16"
+            />
+
+            {/* ## */}
+            <h3 className="h3 font-bold text-white max-md:ml-4 md:mt-4">
+              {item.title}
+            </h3>
+          </div>
+
+          {/* # */}
+          <p className="mt-4 text-white">{item.desc}</p>
         </div>
       ))}
     </>

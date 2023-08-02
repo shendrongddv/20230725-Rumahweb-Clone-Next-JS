@@ -130,7 +130,9 @@ export default function Homepage() {
             </div>
 
             {/* # Content */}
-            <div className="w-full">{/* <ForYou /> */}</div>
+            <div className="w-full">
+              <ForYou />
+            </div>
           </div>
         </div>
       </section>

@@ -6,24 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // Content
 import { dataForYouWhoWant } from "@/content";
 
-interface ForYouProps {
-  id: number;
-  label: string;
-  title: string;
-  icon: LucideIcon;
-  desc: string[];
-  img: string;
-}
-[];
-
-const ForYou: React.FC<ForYouProps> = ({
-  id,
-  label,
-  title,
-  icon,
-  desc,
-  img,
-}) => {
+const ForYou = () => {
   const items = dataForYouWhoWant;
 
   return (

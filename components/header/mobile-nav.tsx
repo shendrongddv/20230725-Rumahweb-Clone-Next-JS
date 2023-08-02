@@ -20,7 +20,7 @@ const MobileNav = () => {
           <Menu className="h-4 w-4 text-white" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full">
+      <SheetContent className="w-full bg-[url(/bg-hero.webp)] bg-cover bg-center bg-no-repeat">
         <SheetHeader>
           <SheetTitle></SheetTitle>
           <SheetDescription></SheetDescription>

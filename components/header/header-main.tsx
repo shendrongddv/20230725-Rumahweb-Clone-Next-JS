@@ -7,7 +7,7 @@ const HeaderMain = () => {
   return (
     <header className="px-4">
       <div className="container">
-        <div className="flex h-16 items-center justify-between md:h-20">
+        <div className="flex h-16 items-center justify-between py-4 md:h-20">
           {/* Logo Brand */}
           <LogoBrand />
 

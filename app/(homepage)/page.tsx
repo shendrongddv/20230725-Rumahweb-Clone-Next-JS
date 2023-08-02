@@ -160,7 +160,7 @@ export default function Homepage() {
       {/* ./ FAQ */}
 
       {/* Review */}
-      <section className="px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* # Heading */}
@@ -183,7 +183,7 @@ export default function Homepage() {
       {/* ./ Review */}
 
       {/* Clients */}
-      <section className="px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* # Heading */}

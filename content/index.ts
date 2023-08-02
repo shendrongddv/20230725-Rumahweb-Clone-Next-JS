@@ -91,3 +91,79 @@ export const dataFAQ = [
     a: "struggle citizen composition progress report key soft success pie repeat develop program people generally clearly important valley pine bank anyway refused .",
   },
 ];
+
+// Review
+export const contentReviews = [
+  {
+    id: 1,
+    name: "Andi Prasetyo",
+    gender: "men",
+    body: "Web hosting provider ini sangat bagus, harga yang ditawarkan terjangkau dan kualitasnya juga bagus.",
+  },
+  {
+    id: 2,
+    name: "Budi Santoso",
+    gender: "men",
+    body: "Saya sangat puas dengan web hosting provider ini, pelayanannya sangat bagus dan responsif.",
+  },
+  {
+    id: 3,
+    name: "Cici Agustina",
+    gender: "women",
+    body: "Web hosting provider ini sangat recommended, saya sudah menggunakan selama 5 tahun dan tidak pernah ada masalah.",
+  },
+  {
+    id: 4,
+    name: "Dedi Setiawan",
+    gender: "men",
+    body: "Web hosting provider ini sangat cepat dan stabil, saya tidak pernah mengalami downtime.",
+  },
+  {
+    id: 5,
+    name: "Eka Nurjanah",
+    gender: "women",
+    body: "Web hosting provider ini sangat mudah digunakan, saya tidak perlu ribet untuk settingnya.",
+  },
+  {
+    id: 6,
+    name: "Fani Permata",
+    gender: "women",
+    body: "Web hosting provider ini sangat murah, saya bisa menghemat banyak biaya.",
+  },
+  {
+    id: 7,
+    name: "Gatot Wicaksono",
+    gender: "men",
+    body: "Web hosting provider ini sangat supportif, saya selalu mendapatkan bantuan yang saya butuhkan.",
+  },
+  {
+    id: 8,
+    name: "Hendra Wijaya",
+    gender: "men",
+    body: "Web hosting provider ini sangat reliable, saya tidak pernah mengalami data loss.",
+  },
+  {
+    id: 9,
+    name: "Irma Lestari",
+    gender: "women",
+    body: "Web hosting provider ini sangat scalable, saya bisa dengan mudah menambah atau mengurangi resources sesuai kebutuhan.",
+  },
+  {
+    id: 10,
+    name: "Joko Susilo",
+    gender: "men",
+    body: "Web hosting provider ini sangat secure, data saya selalu aman.",
+  },
+  {
+    id: 11,
+    name: "Karin Ayumi",
+    gender: "women",
+    body: "Web hosting provider ini sangat user-friendly, saya bisa dengan mudah mengelola website saya.",
+  },
+  {
+    id: 12,
+    name: "Lala Fatimah",
+    gender: "women",
+    body: "Web hosting provider ini sangat recommended, saya tidak akan pindah ke lain hati.",
+  },
+];

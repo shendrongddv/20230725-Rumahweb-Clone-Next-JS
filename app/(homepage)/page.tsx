@@ -17,6 +17,8 @@ import {
 } from "@/components/feature-card";
 import ForYou from "@/components/for-you";
 import FAQAccordion from "@/components/faq-accordion";
+import { ClientClouds } from "@/components/logo-clouds";
+import ReviewSlider from "@/components/review-slider";
 
 export default function Homepage() {
   return (
@@ -177,7 +179,9 @@ export default function Homepage() {
             </div>
 
             {/* # Content */}
-            <div></div>
+            <div className="w-full">
+              <ReviewSlider />
+            </div>
           </div>
         </div>
       </section>
@@ -196,7 +200,7 @@ export default function Homepage() {
             </div>
 
             {/* # Content */}
-            <div></div>
+            <ClientClouds />
           </div>
         </div>
       </section>

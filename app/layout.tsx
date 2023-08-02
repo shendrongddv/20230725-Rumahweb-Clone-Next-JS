@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen font-body antialiased",
+          "min-h-screen bg-[url(/bg-hero.webp)] bg-cover bg-fixed bg-no-repeat font-body antialiased",
           fontDisplay.variable,
           fontBody.variable,
         )}

@@ -24,12 +24,9 @@ export default function Homepage() {
   return (
     <>
       {/* Hero */}
-      <section
-        id="hero"
-        className="bg-[url(/bg-hero.webp)] bg-cover bg-center bg-no-repeat"
-      >
+      <section id="hero">
         {/* # */}
-        <div className="px-4 py-16">
+        <div className="px-4 pb-16 pt-16 md:pt-32">
           <div className="container">
             <div className="relative flex w-full pb-28 sm:pb-0">
               {/* Col */}
@@ -84,7 +81,7 @@ export default function Homepage() {
       {/* ./ Hero */}
 
       {/* Features */}
-      <section className="px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="container flex flex-col gap-12">
           {/* Primary Features */}
           <div className="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3">
@@ -121,7 +118,7 @@ export default function Homepage() {
       {/* ./ Credits */}
 
       {/* Solution */}
-      <section className="px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="container">
           <div className="flex flex-col items-center gap-8">
             {/* # Heading */}
